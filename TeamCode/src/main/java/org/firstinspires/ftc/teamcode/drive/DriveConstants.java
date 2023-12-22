@@ -46,7 +46,7 @@ public class DriveConstants {
      */
     public static double WHEEL_RADIUS = (75.0 / 2.0 / 25.4); // in
     public static double GEAR_RATIO = (59.89583333 / 59.69220987); // output (wheel) speed / input (motor) speed
-    public static double TRACK_WIDTH = 9.5; // in
+    public static double TRACK_WIDTH = 9.87; // in
 
     /*
      * These are the feedforward parameters used to model the drive motor behavior. If you are using

@@ -32,6 +32,7 @@ import com.acmerobotics.roadrunner.geometry.Vector2d;
 //import com.google.mlkit.vision.barcode.common.Barcode;
 //import com.google.mlkit.vision.common.InputImage;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DistanceSensor;
 import com.qualcomm.robotcore.hardware.Servo;
@@ -48,7 +49,7 @@ import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 //import org.openftc.easyopencv.OpenCvWebcam;
 
 
-@Autonomous
+@Disabled
 public class autoRedFrontNearPark extends LinearOpMode
 {
     private int choiceFunction(

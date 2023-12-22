@@ -195,79 +195,82 @@ public class MeepMeepTesting {
                 .setDimensions(12.25,12.75)
                 .setColorScheme(new ColorSchemeBlueDark())
                 .followTrajectorySequence(drive ->
+                            drive.trajectorySequenceBuilder(new Pose2d(54,34.5, Math.toRadians(0)))
+                                    .lineToLinearHeading(new Pose2d(48,34.5, Math.toRadians(0)))
+                                    .turn(Math.toRadians(180))
 
 // front initial position
-                        drive.trajectorySequenceBuilder(new Pose2d(-40, 64, Math.toRadians(270)))
-
-// back initial position
-//                        drive.trajectorySequenceBuilder(new Pose2d(17, 64, Math.toRadians(270)))
-
-
-
-// initial setup
-                        .forward(38)
-
-///////////////////////////////////////////////////////////////
-
-// center (purple)
-                        // none
-//                        .waitSeconds(1)
-
-// left (purple)
-                        // back
-//                        .strafeLeft(13)
-//                        .waitSeconds(1)
-
-                        // front
-//                        .strafeLeft(9)
-//                        .waitSeconds(1)
-//                        .strafeRight(9)
-
-// right (purple)
-                        // back
-//                        .strafeRight(9)
-//                        .waitSeconds(1)
-//                        .strafeLeft(9)
+//                        drive.trajectorySequenceBuilder(new Pose2d(-40, 64, Math.toRadians(270)))
 //
-                        // front
-                        .strafeRight(13)
-                        .waitSeconds(1)
-
-//////////////////////////////////////////////////////////////////////
-
-// front setup to yellow
-                        .back(33)
-                        .lineTo(new Vector2d(20, 59))
-
-// back setup to yellow
-                        // none
-
-///////////////////////////////////////////////////////////////////
-
-// center (yellow)
-//                        .lineToLinearHeading(new Pose2d(50,35, 0))
-
-// left (yellow)
-//                        .lineToLinearHeading(new Pose2d(50,41, 0))
-
-// right (yellow)
-                        .lineToLinearHeading(new Pose2d(50,29, 0))
-
-// servo (yellow)
-                        .waitSeconds(1)
-
-// arm (yellow)
-//                        .waitSeconds(3)
-
-///////////////////////////////////////////////////////////////////
-
-// far (park)
-//                        .lineTo(new Vector2d(50, 14))
-//                        .lineTo(new Vector2d(62, 14))
-
-// near (park)
-                        .lineTo(new Vector2d(50, 62))
-                        .lineTo(new Vector2d(62, 62))
+//// back initial position
+////                        drive.trajectorySequenceBuilder(new Pose2d(17, 64, Math.toRadians(270)))
+//
+//
+//
+//// initial setup
+//                        .forward(38)
+//
+/////////////////////////////////////////////////////////////////
+//
+//// center (purple)
+//                        // none
+////                        .waitSeconds(1)
+//
+//// left (purple)
+//                        // back
+////                        .strafeLeft(13)
+////                        .waitSeconds(1)
+//
+//                        // front
+////                        .strafeLeft(9)
+////                        .waitSeconds(1)
+////                        .strafeRight(9)
+//
+//// right (purple)
+//                        // back
+////                        .strafeRight(9)
+////                        .waitSeconds(1)
+////                        .strafeLeft(9)
+////
+//                        // front
+//                        .strafeRight(13)
+//                        .waitSeconds(1)
+//
+////////////////////////////////////////////////////////////////////////
+//
+//// front setup to yellow
+//                        .back(33)
+//                        .lineTo(new Vector2d(20, 59))
+//
+//// back setup to yellow
+//                        // none
+//
+/////////////////////////////////////////////////////////////////////
+//
+//// center (yellow)
+////                        .lineToLinearHeading(new Pose2d(50,35, 0))
+//
+//// left (yellow)
+////                        .lineToLinearHeading(new Pose2d(50,41, 0))
+//
+//// right (yellow)
+//                        .lineToLinearHeading(new Pose2d(50,29, 0))
+//
+//// servo (yellow)
+//                        .waitSeconds(1)
+//
+//// arm (yellow)
+////                        .waitSeconds(3)
+//
+/////////////////////////////////////////////////////////////////////
+//
+//// far (park)
+////                        .lineTo(new Vector2d(50, 14))
+////                        .lineTo(new Vector2d(62, 14))
+//
+//// near (park)
+//                        .lineTo(new Vector2d(50, 62))
+//                        .lineTo(new Vector2d(62, 62))
 
                         .build()
 

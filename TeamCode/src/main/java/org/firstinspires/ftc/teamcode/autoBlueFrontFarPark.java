@@ -32,6 +32,7 @@ import com.acmerobotics.roadrunner.geometry.Vector2d;
 //import com.google.mlkit.vision.barcode.common.Barcode;
 //import com.google.mlkit.vision.common.InputImage;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DistanceSensor;
 import com.qualcomm.robotcore.hardware.Servo;
@@ -52,7 +53,7 @@ import java.util.List;
 //import org.openftc.easyopencv.OpenCvWebcam;
 
 
-@Autonomous
+@Disabled
 public class autoBlueFrontFarPark extends LinearOpMode
 {
     private int choiceFunction(
@@ -128,6 +129,7 @@ public class autoBlueFrontFarPark extends LinearOpMode
     /** [END] CLASS VARIABLES GO HERE. THEY CAN BE USED IN ANY FUNCTION BELOW THIS POINT. **/
 
     @Override
+
     public void runOpMode()
     {
         leftDistance = hardwareMap.get(DistanceSensor.class, "leftDistance");
