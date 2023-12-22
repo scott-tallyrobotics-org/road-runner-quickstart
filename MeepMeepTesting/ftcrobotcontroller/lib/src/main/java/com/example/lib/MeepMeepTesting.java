@@ -289,7 +289,7 @@ public class MeepMeepTesting {
 
 
 // initial setup
-                                .forward(38)
+//                                .forward(38)
 
 ///////////////////////////////////////////////////////////////
 
@@ -309,9 +309,11 @@ public class MeepMeepTesting {
 
 // right (purple)
                                         // back
-                                .strafeRight(9)
+//                                .strafeRight(9)
+                                .lineToLinearHeading(new Pose2d(8,26, Math.toRadians(270)))
                                 .waitSeconds(1)
-                                .strafeLeft(9)
+//                                .lineToLinearHeading(new Pose2d(17,26, Math.toRadians(0)))
+//                                .strafeLeft(9)
 
                                         // front
 //                                .strafeRight(13)
@@ -335,7 +337,7 @@ public class MeepMeepTesting {
 //                                .lineToLinearHeading(new Pose2d(50,41, 0))
 
 // right (yellow)
-                                .lineToLinearHeading(new Pose2d(50,29, 0))
+                                .lineToLinearHeading(new Pose2d(50,29, Math.toRadians(0)))
 
 // servo (yellow)
                                 .waitSeconds(1)
